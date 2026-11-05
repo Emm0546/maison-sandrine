@@ -235,3 +235,62 @@ body {
   color: #ffffff;
   border-color: #171717;
 }
+
+/* QUANTITY CONTROLS */
+
+.food-card {
+  cursor: default;
+}
+
+.food-card.selected {
+  border-color: #587c53;
+  background: #f9fcf7;
+}
+
+.qty {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.qty-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid #587c53;
+  background: #fff;
+  color: #587c53;
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.qty-btn:hover:not(:disabled) {
+  background: #587c53;
+  color: #fff;
+}
+
+.qty-btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.qty-value {
+  min-width: 18px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* ORDER NOTE */
+
+.order-note {
+  width: 100%;
+  margin-top: 14px;
+  padding: 12px;
+  border: 1px solid #e9e6df;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 14px;
+  resize: vertical;
+}
