@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Découvrez les gourmandises de Maison Sandrine et commandez directement sur WhatsApp."
+    />
+
+    <title>Maison Sandrine | Boulangerie & Gourmandises</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main class="menu-container">
+      <div class="language-switch">
+        <button type="button" class="lang-button" data-lang="en">EN</button>
+        <button type="button" class="lang-button active" data-lang="fr">
+          FR
+        </button>
+      </div>
+
+      <header class="restaurant-header">
+        <p class="restaurant-label" data-i18n="welcome">BIENVENUE CHEZ</p>
+        <h1>Maison Sandrine<span>.</span></h1>
+
+        <p class="restaurant-description" data-i18n="description">
+          De délicieuses gourmandises préparées avec amour.
+        </p>
+
+        <div class="opening-status" data-i18n="open">
+          ● Commandes via WhatsApp
+        </div>
+      </header>
+
+      <section class="menu-section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow" data-i18n="menu">NOTRE MENU</p>
+            <h2 data-i18n="choose">Choisissez vos gourmandises</h2>
+          </div>
+
+          <span class="menu-count" data-i18n="count">06 ARTICLES</span>
+        </div>
+
+        <label class="food-card">
+          <div class="food-info">
+            <h3 data-i18n="milkBread">Pain au lait</h3>
+            <p data-i18n="milkBreadDesc">Un pain doux et moelleux.</p>
+            <strong>100 FCFA</strong>
+          </div>
+
+          <div class="food-selection">
+            <input
+              type="checkbox"
+              class="food-checkbox"
+              value="100"
+              data-name="Milk bread"
+              data-name-fr="Pain au lait"
+            />
+          </div>
+        </label>
+
+        <label class="food-card">
+          <div class="food-info">
+            <h3 data-i18n="chocolateBread">Pain au chocolat</h3>
+            <p data-i18n="chocolateBreadDesc">Un délicieux pain au chocolat.</p>
+            <strong>200 FCFA</strong>
+          </div>
+
+          <div class="food-selection">
+            <input
+              type="checkbox"
+              class="food-checkbox"
+              value="200"
+              data-name="Chocolate bread"
+              data-name-fr="Pain au chocolat"
+            />
+          </div>
+        </label>
+
+        <label class="food-card">
+          <div class="food-info">
+            <h3 data-i18n="stuffedBread">Pain fourré</h3>
+            <p data-i18n="stuffedBreadDesc">Un pain généreusement fourré.</p>
+            <strong>100 FCFA</strong>
+          </div>
+
+          <div class="food-selection">
+            <input
+              type="checkbox"
+              class="food-checkbox"
+              value="100"
+              data-name="Stuffed bread"
+              data-name-fr="Pain fourré"
+            />
+          </div>
+        </label>
+
+        <label class="food-card">
+          <div class="food-info">
+            <h3 data-i18n="miniPizza">Mini pizza</h3>
+            <p data-i18n="miniPizzaDesc">Une petite pizza savoureuse.</p>
+            <strong>100 FCFA</strong>
+          </div>
+
+          <div class="food-selection">
+            <input
+              type="checkbox"
+              class="food-checkbox"
+              value="100"
+              data-name="Mini pizza"
+              data-name-fr="Mini pizza"
+            />
+          </div>
+        </label>
+
+        <label class="food-card">
+          <div class="food-info">
+            <h3 data-i18n="chocolateCake">Cake au chocolat</h3>
+            <p data-i18n="chocolateCakeDesc">Un cake gourmand au chocolat.</p>
+            <strong>500 FCFA</strong>
+          </div>
+
+          <div class="food-selection">
+            <input
+              type="checkbox"
+              class="food-checkbox"
+              value="500"
+              data-name="Chocolate cake"
+              data-name-fr="Cake au chocolat"
+            />
+          </div>
+        </label>
+
+        <label class="food-card">
+          <div class="food-info">
+            <h3 data-i18n="milkCake">Cake au lait</h3>
+            <p data-i18n="milkCakeDesc">Un cake doux et savoureux.</p>
+            <strong>300 FCFA</strong>
+          </div>
+
+          <div class="food-selection">
+            <input
+              type="checkbox"
+              class="food-checkbox"
+              value="300"
+              data-name="Milk cake"
+              data-name-fr="Cake au lait"
+            />
+          </div>
+        </label>
+      </section>
+
+      <section class="order-summary">
+        <div class="summary-row">
+          <span data-i18n="selected">Articles sélectionnés</span>
+          <span id="item-count">0</span>
+        </div>
+
+        <div class="summary-row total-row">
+          <span data-i18n="total">Total</span>
+          <strong id="total-price">0 FCFA</strong>
+        </div>
+
+        <button id="order-button" disabled>
+          <span data-i18n="order">Commander sur WhatsApp</span>
+          <span>↗</span>
+        </button>
+
+        <p class="summary-note" data-i18n="note">
+          Votre commande sera envoyée directement sur WhatsApp.
+        </p>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

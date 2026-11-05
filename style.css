@@ -1,0 +1,237 @@
+/* BODY */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f3ee;
+  color: #242820;
+  line-height: 1.6;
+}
+
+/* MAIN CONTAINER */
+
+.menu-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+/* RESTAURANT HEADER */
+
+.restaurant-header {
+  text-align: center;
+  padding: 35px 15px;
+}
+
+.restaurant-label,
+.eyebrow {
+  color: #71836b;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.restaurant-header h1 {
+  font-size: 36px;
+  margin: 8px 0;
+  letter-spacing: -1px;
+}
+
+.restaurant-header h1 span {
+  color: #9b7950;
+}
+
+.restaurant-description {
+  color: #777;
+  font-size: 14px;
+}
+
+.opening-status {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 6px 12px;
+  background: #e5eee3;
+  color: #426443;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+/* MENU HEADING */
+
+.menu-section {
+  margin-top: 20px;
+}
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.section-heading h2 {
+  font-size: 23px;
+  margin-top: 3px;
+}
+
+.menu-count {
+  color: #999;
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+
+/* FOOD CARDS */
+
+.food-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  border: 1px solid #e9e6df;
+  cursor: pointer;
+  transition:
+    border-color 0.2s,
+    transform 0.2s;
+}
+
+.food-card:has(input:checked) {
+  border-color: #587c53;
+  background: #f9fcf7;
+}
+
+.food-card:active {
+  transform: scale(0.99);
+}
+
+.food-info h3 {
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.food-info p {
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 8px;
+}
+
+.food-info strong {
+  color: #587c53;
+  font-size: 14px;
+}
+
+.food-checkbox {
+  width: 22px;
+  height: 22px;
+  accent-color: #587c53;
+  cursor: pointer;
+}
+
+/* ORDER SUMMARY */
+
+.order-summary {
+  margin-top: 25px;
+  background: #fff;
+  padding: 22px;
+  border-radius: 14px;
+  border: 1px solid #e9e6df;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  color: #777;
+  font-size: 14px;
+  padding: 8px 0;
+}
+
+.total-row {
+  border-top: 1px solid #eee;
+  margin-top: 8px;
+  padding-top: 15px;
+  color: #242820;
+  font-size: 16px;
+}
+
+.total-row strong {
+  font-size: 20px;
+  color: #587c53;
+}
+
+/* WHATSAPP BUTTON */
+
+#order-button {
+  width: 100%;
+  margin-top: 18px;
+  padding: 16px;
+  border: none;
+  border-radius: 8px;
+  background: #587c53;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+#order-button:hover:not(:disabled) {
+  background: #426443;
+}
+
+#order-button:disabled {
+  background: #b9c4b5;
+  cursor: not-allowed;
+}
+
+#order-button span {
+  margin-left: 8px;
+}
+
+.summary-note {
+  margin-top: 12px;
+  text-align: center;
+  font-size: 11px;
+  color: #999;
+}
+
+/* DESKTOP ADJUSTMENT */
+
+@media (min-width: 600px) {
+  .menu-container {
+    padding-top: 55px;
+  }
+}
+/* LANGUAGE SWITCH */
+
+.language-switch {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.lang-button {
+  border: 1px solid #ddd;
+  background: transparent;
+  padding: 7px 13px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  color: #777;
+  transition: all 0.3s ease;
+}
+
+.lang-button.active {
+  background: #171717;
+  color: #ffffff;
+  border-color: #171717;
+}
